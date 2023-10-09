@@ -19,46 +19,46 @@ The project is deployed via GitHub Pages.
 
 When you start the application, you will be presented with instructions for using the application and a table of all saved projects.
 
-![Alt text](image.png)
+![image](https://github.com/mathminx/Project-Tracker/assets/122234007/c40db1ad-8270-44be-8d9a-270b348de7f9)
 
 To add a project, click the "Open Modal" button to reveal the project input form.
   
-![Alt text](image-1.png)
+![image-1](https://github.com/mathminx/Project-Tracker/assets/122234007/37eb8288-bcf4-4995-8ad6-bc10971358dc)
 
 
 Input the name of the project in the "Project Name" input field.
 
-![Alt text](image-2.png)
+![image-2](https://github.com/mathminx/Project-Tracker/assets/122234007/8dc1c14a-7779-4415-91be-10a957b95c94)
 
 
 Select one of the three project types from the drop-down menu.
 
-![Alt text](image-3.png)
+![image-3](https://github.com/mathminx/Project-Tracker/assets/122234007/493f304b-cf48-4b69-beb7-762b77b22435)
 
 
 Select the project due date from the interactive calendar..
 
-![Alt text](image-5.png)
+![image-5](https://github.com/mathminx/Project-Tracker/assets/122234007/75322641-652a-4d48-993a-f0ce8dbbb6be)
 
 
 Click the submit button to save the project.
 
-![Alt text](image-6.png)
+![image-6](https://github.com/mathminx/Project-Tracker/assets/122234007/bf3ad8fa-82e0-4e3f-a207-cfb36a66aee1)
 
 
 The project is added to the table.
 
-![Alt text](image-7.png)
+![image-7](https://github.com/mathminx/Project-Tracker/assets/122234007/5fe9da03-d238-404e-928e-62bed043d00d)
 
 
 To delete a project, cliick the "Delete" button next to the project to be deleted.
 
-![Alt text](image-9.png)
+![image-9](https://github.com/mathminx/Project-Tracker/assets/122234007/9e31c10e-1e36-478d-a326-4dddb193e52e)
 
 
 The project is deleted from storage and remived from the table.
 
-![Alt text](image-10.png)
+![image-10](https://github.com/mathminx/Project-Tracker/assets/122234007/98ed9c5b-ec53-4a70-93b2-c759475ca7de)
 
 
 ## License
