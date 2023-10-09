@@ -1,8 +1,6 @@
 # Project-Tracker
 
-This application was built using JavaScript, jQuery, and Bootstrap. It . 
-
-This application enables bootcamp students to keep track of their projects. It allows users to input, store, delete, and view their projects. The application is powered by JavaScript and jQuery code that dynamically updates HTML and CSS. The application also uses Bootstrap for styling.
+This application enables bootcamp students to keep track of their projectsby allowing them to input, store, delete, and view their projects. The application is powered by JavaScript/jQuery code that dynamically updates HTML and CSS. The application also uses Bootstrap for styling.
 
 
 ## Table of Contents
@@ -19,93 +17,48 @@ The project is deployed via GitHub Pages.
 
 ## Usage
 
-When you start the application, you will be presented with a menu containing the following options: 
+When you start the application, you will be presented with instructions for using the application and a table of all saved projects.
 
-![image](https://user-images.githubusercontent.com/122234007/232347297-07e73e1b-a49d-4910-9c33-73923795b7df.png) 
-![image](https://user-images.githubusercontent.com/122234007/232347490-2f04457a-0ab6-4362-9829-0a0a003ec6bc.png) 
-![image](https://user-images.githubusercontent.com/122234007/232347362-08ec6afe-70e9-4b49-be17-650c8bec7e69.png)
+![Alt text](image.png)
 
-
-1) View All Departments: Displays a formatted table showing department names and department ids.  
-
-![image](https://user-images.githubusercontent.com/122234007/232346853-9d64497e-ef84-4fdd-a4e1-585667569395.png)
-
-
-2) View All Roles: Displays a formatted table showing job data, including role id, job title, the salary for that role, and the department to which the role belongs.
+To add a project, click the "Open Modal" button to reveal the project input form.
   
-![image](https://user-images.githubusercontent.com/122234007/232346865-516063d2-3611-4dec-907f-d68ebe0cdc0d.png)
+![Alt text](image-1.png)
 
 
-3) View All Employees: Displays a formatted table showing employee data, including employee id, full name, job title, salary, departments, and the employee's manager.
+Input the name of the project in the "Project Name" input field.
 
-![image](https://user-images.githubusercontent.com/122234007/232346913-32a9ecc7-dfb8-4788-ac25-92a00dc15122.png)
-
-
-4) View All Employees By Manager: Displays a formatted table showing manager names and the names of their direct reports.
-
-![image](https://user-images.githubusercontent.com/122234007/232346924-66b757eb-1fa5-4591-82da-3cfb4bf48e0c.png)
+![Alt text](image-2.png)
 
 
-5) View All Employees By Department: Displays a formatted table showing department ids and names, and the names of all employees in each department.
+Select one of the three project types from the drop-down menu.
 
-![image](https://user-images.githubusercontent.com/122234007/232346941-a7795ca6-ad8b-4169-ab59-d93a6dc7a49f.png)
-
-
-6) View A Department's Total Utilised Budget: Prompts you for the id of the department for which you want to see the total utilised budget. If you wish to see all   departments, just press enter. Displays a formatted table showing  the department name(s), and the total utilised budget for the chosen department(s).
-
-![image](https://user-images.githubusercontent.com/122234007/232346957-a8d6b541-cf20-47c8-8d32-ae0faa2025e1.png)
-
-![image](https://user-images.githubusercontent.com/122234007/232346971-14c65094-8999-446e-8328-ac4952543df1.png)
+![Alt text](image-3.png)
 
 
-7) Add a Department: Prompts you for the name of the department you want to add, then displays the updated table of departments that includes the new department.
+Select the project due date from the interactive calendar..
 
-![image](https://user-images.githubusercontent.com/122234007/232346992-089329a3-5c9e-49ef-a1d8-7f4fd220d6bb.png)
-
-
-8) Add a Role: Prompts you for the name of the role you want to add, the salary for that role, and the the department id for the role, then displays the updated table of roles that includes the new role.
-
-![image](https://user-images.githubusercontent.com/122234007/232347012-3481ed35-f6f0-4ff3-9567-b42a1faa6d47.png)
+![Alt text](image-5.png)
 
 
-9) Add an Employee: Prompts you for the first name, last name, role, and manager for the new employee, then displays the updated table of employees that includes the new employee.
+Click the submit button to save the project.
 
-![image](https://user-images.githubusercontent.com/122234007/232347027-4fed2b23-0043-4cb0-9c23-0d58fa4cf099.png)
-
-
-10) Update an Employee's Role: Prompts you for the employee id and the id of the employee's new role, then displays the updated table of employees.
-
-![image](https://user-images.githubusercontent.com/122234007/232347046-5b17c73b-a726-42cc-a785-21aaea462be0.png)
+![Alt text](image-6.png)
 
 
-11) Update an Employee's Manager: Prompts you for the employee id and the id of the employee's new manager, then displays the updated table of employees.
+The project is added to the table.
 
-![image](https://user-images.githubusercontent.com/122234007/232347063-f7cb11f4-2ad1-4c68-b532-a5aca394480e.png)
-
-
-12) Update a Role's Salary: Prompts you for the role id and the revised salary for that role, then displays the updated table of roles.
-
-![image](https://user-images.githubusercontent.com/122234007/232347079-a3cb8ddb-a59b-4262-9415-0cec590febf7.png)
+![Alt text](image-7.png)
 
 
-13) Delete a Department: Prompts you for the id of the department you want to delete, then displays the updated table of departments that no longer includes the deleted department.
+To delete a project, cliick the "Delete" button next to the project to be deleted.
 
-![image](https://user-images.githubusercontent.com/122234007/232347091-46876f16-8f70-4f89-ac74-dcebfece1c8b.png)
-
-
-14) Delete a Role: Prompts you for the id of the role you want to delete, then displays the updated table of roles that no longer includes the deleted role.
-
-![image](https://user-images.githubusercontent.com/122234007/232347108-470d69d1-d183-4446-85a4-0075595e9699.png)
+![Alt text](image-9.png)
 
 
-15) Delete an Employee: Prompts you for the id of the employee you want to delete, then displays the updated table of employees that no longer includes the deleted employee.
+The project is deleted from storage and remived from the table.
 
-![image](https://user-images.githubusercontent.com/122234007/232347127-dda279d7-cd74-4a88-b252-cdb5e2dd7cbf.png)
-
-
-16) Quit: Quits the application and returns you to the command line.
-
-![image](https://user-images.githubusercontent.com/122234007/232347142-50e86c60-513f-4202-9ae4-fa1a05ba9510.png)
+![Alt text](image-10.png)
 
 
 ## License
