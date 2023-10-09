@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Tracker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
+  </head>
+
+
+  <body class="bg-black text-light min-vw-100 min-vh-100 overflow-auto">
+    
+    <!-- Header -->
+    <header>
+      <div class="d-flex col-12 min-vw-100 pt-5">
+        <h1 class="row col-12 justify-content-center mb-2">Welcome to Project Tracker</h1>
+      </div>
+      <div class="d-flex col-12 min-vw-100 pt-2 mb-3">
+        <p class="row justify-content-center col-12 text-center fw-semibold fs-5 time"></p>
+      </div>
+    </header>
+
+    <!--  Container  -->
+    <div class="d-flex justify-content-evenly max-vh-100" id="container">
+      <!--Our div is hidden by default-->
+      <div id="message" style="display:none;">Project Deleted</div>
+      
+      <!-- Card -->
+      <div class="card " id="instr-card">
+        <div class="card-header fw-semibold fs-6 px-3 pt-2 text-center">Instructions</div>
+        <div class="card-body px-4 fs-7">
+          <p class="card-text fw-medium">
+            Project Tracker displays all of your projects in a table. Each of your projects must have a name, a type, and a due date. 
+          </p><p class="card-text fw-medium">
+            Add a project: 
+          </p>
+          <ol class="ps-4">
+            <li>Click the "Open Modal" button below.</li>
+            <li>Input the name of the project.</li>
+            <li>Select the project type from the drop-down menu. </li><li>Select the due date using the interactive calendar.</li>
+            <li>Click the "Submit" button.</li>
+          </ol>
+          <p class="card-text fw-medium mt-3">
+            Your project is added to the table!
+          </p>
+          <p class="card-text fw-medium">
+            To delete a project, click the "Delete" button net to the project you wish to delete.
+          </p>
+          <div class="d-flex justify-content-center">
+            <button type="button" id="open-modal" class="btn modal-button btn-dark border-1 px-3 py-2 rounded-2 fs-6 fw-semibold my-3" 
+              data-bs-toggle="modal" data-bs-target="#staticBackdrop">Open Modal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--  Table  -->
+      <div class="card height-auto" id="table-card">
+        <table class="table" id="my-table">
+          <thead class="card-header fs-6 table-light">
+            <tr>
+              <th class="fs-6 fw-semibold ps-4" scope="col">Project Name</th>
+              <th class="fs-6 fw-semibold ps-4" scope="col">Project Type</th>
+              <th class="fs-6 fw-semibold ps-4 pe-4" scope="col">Due Date</th>
+              <th class="button" scope="col"></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content d-flex ">
+            <div class="modal-header text-center">
+              <h1 class="modal-title w-100 text-black fs-5" id="staticBackdropLabel">Project Data Input Form</h1>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="formControlInput" class="form-label text-black ml-5 mb-1">Project Name</label>
+                  <input class="form-control focus-ring" type="text" id="project-name" aria-label="default input example">
+                </div>
+                <div>
+                  <label for="formControlInput" class="form-label text-black ml-5 mb-1">Project Type</label>
+                  <select class="form-select mb-3" id="project-type" aria-label="Select project">
+                    <option selected>Select</option>
+                    <option value="Mini-Project">Mini-Project</option>
+                    <option value="Challenge">Challenge</option>
+                    <option value="Group Project">Group Project</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="formControlInput" class="form-label text-black mb-1">Due Date</label>
+                  <input class="form-control" type="text" name="date" id="datepicker" aria-label="input project name">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" id="modal-close">Close</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+      integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+    </script>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

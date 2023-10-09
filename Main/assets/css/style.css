@@ -1,0 +1,82 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+#container {
+  margin: 5px;
+}
+
+#instr-card {
+  max-width: 25%;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+ol {
+margin-bottom: 0px;
+}
+
+.btn {
+  background-color:#f6f6f6;
+  border-color: black;
+  color: black;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: darkred;
+  box-shadow: 0px 1px 1px darkred inset, 0px 0px 8px darkred;
+}
+
+.ui-datepicker-calendar, .ui-datepicker-header {
+  background-color:rgb(233, 233, 233);
+  border: solid darkred;
+  border-bottom: 0px;
+}
+
+.ui-datepicker {
+  color: black;
+}
+
+.ui-datepicker-header, td {
+  padding: 5px;
+}
+
+.ui-datepicker-prev, td {
+  padding-right: 5px;
+}
+
+.ui-datepicker-title {
+  font-weight: 600;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next, a {
+  color:darkred;
+}
+
+#table-card {
+  width: auto;
+  min-width: 25%;
+}
+
+.table > tbody > tr > th,
+.table > tbody > tr > td {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+th {
+  font-weight: 300;
+}
+
+/* style project rows based on status (late, due today) */
+.project-late {
+  background-color: var(--lightred);
+}
+
+.project-today {
+  background-color: var(--lightyellow);
+}
